@@ -2,9 +2,9 @@ package fizzbuzzwhizz;
 
 public class Answer {
 
-    public static final String FIZZ = "Fizz";
-    public static final String BUZZ = "Buzz";
-    public static final String WHIZZ = "Whizz";
+    private static final String FIZZ = "Fizz";
+    private static final String BUZZ = "Buzz";
+    private static final String WHIZZ = "Whizz";
 
     public static String answer(int i, int[] specialNumberList) {
         StringBuilder answerString = new StringBuilder();

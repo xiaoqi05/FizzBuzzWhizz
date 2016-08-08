@@ -10,7 +10,7 @@ import static utils.ParseInputString.checkInputValid;
 import static utils.ParseInputString.parseInputStringToNumbers;
 
 public class FizzBuzzWhizz {
-    public static final int TOTAL_STUDENT = 100;
+    private static final int TOTAL_STUDENT = 100;
     private static boolean RUN = true;
 
     private void setSpecialNumberList(int[] specialNumberList) {

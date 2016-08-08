@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class AnswerTest {
 
-    int[] specialNumberList = {3, 5, 7};
+    private int[] specialNumberList = {3, 5, 7};
 
 
     @Test
