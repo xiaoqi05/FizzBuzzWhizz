@@ -8,26 +8,27 @@ public class AnswerTest {
 
 
     @Test
-    public void shouldSpeakFizzWhenCallNumberContainTheFirstSpecialNumber() throws Exception {
+    public void shouldSpeakFizzWhenCallNumberContainTheFirstSpecialNumber() {
         Assert.assertEquals("Fizz", Answer.answer(13, specialNumberList));
     }
 
     @Test
-    public void shouldSpeakFizzBuzzWhizzWhenCallNumberMultipleAllSpecialNumber() throws Exception {
-        Assert.assertEquals("fizzbuzzwhizz.FizzBuzzWhizz", Answer.answer(3*5*7, specialNumberList));
+    public void shouldSpeakFizzBuzzWhizzWhenCallNumberMultipleAllSpecialNumber() {
+        Assert.assertEquals("FizzBuzzWhizz", Answer.answer(3 * 5 * 7, specialNumberList));
 
     }
 
     @Test
-    public void shouldSpeakTwoSpecialStringWhenCallNumberMultipleTwoSpecialNumber() throws Exception {
-        Assert.assertEquals("FizzBuzz", Answer.answer(3*5, specialNumberList));
-        Assert.assertEquals("FizzWhizz",Answer.answer(3*7, specialNumberList));
-        // Assert.assertEquals("BuzzWhizz", fizzbuzzwhizz.Answer.answer(5*5*7, specialNumberList));
+    public void shouldSpeakTwoSpecialStringWhenCallNumberMultipleTwoSpecialNumber() {
+        int[] specialNumberList = {3, 5, 8};
+        Assert.assertEquals("FizzBuzz", Answer.answer(3 * 5, specialNumberList));
+        Assert.assertEquals("FizzWhizz", Answer.answer(3 * 8, specialNumberList));
+        Assert.assertEquals("BuzzWhizz", Answer.answer(5 * 8, specialNumberList));
     }
 
 
     @Test
-    public void shouldSpeakOneSpecialStringWhenCallNumberIsOnlyMultipleTheFirstSpecialNumber() throws Exception {
+    public void shouldSpeakOneSpecialStringWhenCallNumberIsOnlyMultipleTheFirstSpecialNumber() {
         Assert.assertEquals("Fizz", Answer.answer(3, specialNumberList));
         Assert.assertEquals("Buzz", Answer.answer(5, specialNumberList));
         Assert.assertEquals("Whizz", Answer.answer(7, specialNumberList));
@@ -35,7 +36,7 @@ public class AnswerTest {
 
 
     @Test
-    public void shouldSpeakNumberWhenCallNumberNotMultipleSpecialNumber() throws Exception {
+    public void shouldSpeakNumberWhenCallNumberNotMultipleSpecialNumber() {
         Assert.assertEquals("8", Answer.answer(8, specialNumberList));
     }
 

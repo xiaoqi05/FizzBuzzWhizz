@@ -20,7 +20,8 @@ public class FizzBuzzWhizz {
     private int[] specialNumberList;
 
     public void startGame() {
-        printNoteInfo();
+        ConsolePrint.consolePrint("please input the special number list :");
+
         getInputSpecialNumberList();
 
         List<Integer> studentNumberList = GenerateNumber.generateNumberList(TOTAL_STUDENT);
@@ -28,10 +29,6 @@ public class FizzBuzzWhizz {
         for (Integer number : studentNumberList) {
             ConsolePrint.consolePrint(Answer.answer(number, specialNumberList));
         }
-    }
-
-    private void printNoteInfo() {
-        ConsolePrint.consolePrint("please input the special number list :");
     }
 
     private void getInputSpecialNumberList() {
