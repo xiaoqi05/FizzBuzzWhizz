@@ -1,6 +1,6 @@
 package fizzbuzzwhizz;
 
-public class Answer {
+public class Student {
 
     private static final String FIZZ = "Fizz";
     private static final String BUZZ = "Buzz";

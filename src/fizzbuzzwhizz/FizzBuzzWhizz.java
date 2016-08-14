@@ -17,7 +17,7 @@ public class FizzBuzzWhizz {
         List<Integer> studentNumberList = GenerateNumber.generateNumberList(TOTAL_STUDENT);
         ConsolePrint.consolePrint("the output is :");
         for (Integer number : studentNumberList) {
-            ConsolePrint.consolePrint(Answer.answer(number, teacher.getSpecialNumbers()));
+            ConsolePrint.consolePrint(Student.answer(number, teacher.getSpecialNumbers()));
         }
     }
 
