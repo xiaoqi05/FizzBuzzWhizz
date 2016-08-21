@@ -2,9 +2,11 @@ package handler;
 
 public class OCRTeacher {
 
+
     protected StudentAnswerRuleHandlers studentAnswerRuleHandlers;
 
     public void setStudentAnswerRuleHandlers(StudentAnswerRuleHandlers studentAnswerRuleHandlers) {
+        StudentAnswerRuleHandlers.setSpecialNumbers(new int[]{2, 3, 4});
         this.studentAnswerRuleHandlers = studentAnswerRuleHandlers;
     }
 
